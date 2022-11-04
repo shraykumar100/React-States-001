@@ -1,13 +1,91 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    /* border: 1px solid red; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.light{
+    background-color: white;
+}
+
+.dark > h1 {
+    color: #FBFBFB;
+}
+
+.dark > .cardH1{
+    color: #FEA7C4;
+}
+
+.dark > .cardSpan{
+    color: #B7C5C9;
+}
+
+.dark > .cardH5{
+    color: #B7C5C9;
+}
+
+.dark{
+    background-color: #282C35;
+}
+
+.mainComp{
+    display: flex;
+     flex-direction: column;
+     height: 100vh;
+     width: 100vw;
+     gap: 5rem;
+     /* padding: 5rem; */
+     /* position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);  */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.cardH1{
+    color: #D9386C;
+}
+
+
+
+.dark > .btn {
+    background-color: #FEA7C4;
+    color: #282C35;
+}
+
+h1,h2,h3,h4,h5,h6{
+    display: inline-block;
+}
+
+.header{
+    display: flex;
+    gap: 50%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.btn{
+    padding: 0.3rem 0.3rem;
+    border-radius: 10px;
+    border: solid 1px gray;
+    background-color: #D9386C;
+    color: #FFFFFF;
+}
+
+.btn:hover{
+    cursor: pointer;
 }
